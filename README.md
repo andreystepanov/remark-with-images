@@ -75,7 +75,9 @@ import withImages from 'remark-with-images'
 const replace = async (url, alt) => {
   return new Promise((resolve) => {
     setTimeout(() => {
-      return url.replace('images.com', 'cloud.images.com')
+      const newUrl = url.replace('images.com', 'cloud.images.com')
+
+      resolve(newUrl)
     }, 1000)
   })
 }
