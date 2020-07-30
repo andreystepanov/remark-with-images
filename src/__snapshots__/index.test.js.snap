@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`replaces all image urls 1`] = `
+"# Title
+
+  Some text with inline ![image 1](https://cloud.images.com/1.jpg)
+
+  Some other text...
+
+  ![image 2](https://cloud.images.com/2.jpg)
+
+  Rest of the text...
+"
+`;
+
+exports[`replaces all image urls 2`] = `
+Array [
+  Object {
+    "alt": "image 1",
+    "original_url": "https://images.com/1.jpg",
+    "url": "https://cloud.images.com/1.jpg",
+  },
+  Object {
+    "alt": "image 2",
+    "original_url": "https://images.com/2.jpg",
+    "url": "https://cloud.images.com/2.jpg",
+  },
+]
+`;
+
+exports[`throws error if replace function fails 1`] = `"https://images.com/1.jpg"`;
