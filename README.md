@@ -24,7 +24,7 @@ Some other text...
 Rest of the text...
 ```
 
-And you `javascript` might look like:
+And the `javascript` might look like:
 
 ```javascript
 import vfile from 'to-vfile'
