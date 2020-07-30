@@ -24,8 +24,8 @@ async function parse(data, options) {
 }
 
 test('defined', () => {
-  expect(multilineCode).toBeDefined()
-  expect(typeof multilineCode).toBe('function')
+  expect(withImages).toBeDefined()
+  expect(typeof withImages).toBe('function')
 })
 
 test('throws error if replace function fails', async () => {
